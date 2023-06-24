@@ -1,0 +1,84 @@
+body {
+  font-family: 'Ysabeau Infant', googlefonts;
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+#top {
+  background-color: #3498db;
+  text-align: center;
+  color: white;
+  padding: 20px 0 20px;
+  margin-bottom: 30px;
+}
+
+#top h1 {
+  margin-bottom: 10px;
+}
+
+#bottom {
+  text-align: center;
+  font-weight: 700;
+  background-color: #bdc3c7;
+  line-height: 30px;
+  /* dòng chữ sẽ có khoảng cách lớn hơn*/
+  margin-top: 30px;
+}
+
+#main {
+  padding: 0 400px 0 20px;
+  line-height: 25px;
+}
+
+#main h1,
+#main h2 {
+  margin: 10px 0 15px;
+}
+
+#main img {
+  display: block;
+  margin: 20px auto;
+  /* auto, nghĩa là tự động canh giữa*/
+  border: 2px solid #2c3e50;
+  border-radius: 20px 0 20px 0;
+}
+
+.keyword {
+  font-style: italic;
+}
+
+a {
+  color: #3498db;
+}
+
+a:hover {
+  background-color: #bdc3c7;
+}
+
+/*Khi phần sidebar ta để position: absolute thì nó sẽ nhảy lên đầu, do cha của nó "wrapper" ko có thuộc tính gì cả
+  Chính vì vậy để nó absolute theo cha "wrapper" của nó thì ta phải để position của "wrapper" là relative
+  */
+.wrapper {
+  position: relative;
+}
+
+#sidebar {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 270px;
+  font-size: 14px;
+  border: 2px dashed #bdc3c7;
+  padding: 0 10px 20px 20px;
+
+}
+
+#sidebar img {
+  max-width: 100%;
+  margin-top: 20px;
+}
